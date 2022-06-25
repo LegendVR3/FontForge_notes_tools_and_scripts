@@ -1,0 +1,15 @@
+fontforge__merge_fonts.cmd "1_TwitterColorEmoji.ttf" "4_NotoSans-Regular.otf"
+::                          -------->>>1_TwitterColorEmoji__merged_with__4_NotoSans-Regular.ttf
+
+ttx -t "SVG " -o "svg.ttx" 1_TwitterColorEmoji.ttf
+::                          -------->>>svg.ttx
+
+ttx -o "TwitterColorEmoji_NotoSans_w_SVG.ttf" -m "1_TwitterColorEmoji__merged_with__4_NotoSans-Regular.ttf" "svg.ttx"
+::                          -------->>>TwitterColorEmoji_NotoSans_w_SVG.ttf
+
+
+
+
+
+"C:\Python\python-3.6.3\python.exe" "C:\Python\python-3.6.3\Lib\site-packages\fontTools\ttx.py"
+"C:\Python\python-3.6.3\python.exe" "fontTools\ttx.py"

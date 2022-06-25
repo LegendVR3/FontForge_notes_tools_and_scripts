@@ -1,0 +1,1 @@
+ttfautohint -v -f latn -n -w gGD c:\example.ttf c:\example_hinted.ttf
